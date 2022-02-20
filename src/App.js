@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <button disabled={disabled} onClick={()=>setColor(newBtnColor)} style={{backgroundColor:color}}>Change to {newBtnColor}</button>
+      <button disabled={disabled} onClick={()=>setColor(newBtnColor)} style={{backgroundColor: disabled?'gray': color}}>Change to {newBtnColor}</button>
       <input 
       id='disable-btn'
       type="checkbox" 
